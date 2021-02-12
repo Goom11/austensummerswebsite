@@ -30,6 +30,17 @@ body {
   height: 100%;
   width: 100%;
   background-color: #f5f5f5;
+  font-family: "SuisseIntl";
+}
+
+h1 {
+  font-family: "SuisseIntl";
+  font-weight: 600;
+}
+
+p {
+  font-family: "SuisseIntl";
+  font-weight: 300;
 }
 
 /*NAVBAR*/
@@ -59,7 +70,7 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-  font-family: "Circular Std Bold", sans-serif;
+  font-family: "SuisseIntl";
 }
 
 .section1 .overlay {
@@ -72,22 +83,23 @@ body {
 }
 
 .section1 h1 {
+  font-size: 90px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
   width: 60%;
   margin: 10px 0 0 0;
   z-index: 5;
   line-height: 1;
-  letter-spacing: 0.15rem;
+  letter-spacing: 1px;
   text-align: center;
 }
 
 .section1 h2 {
   margin-top: 20px;
-  font-size: 1.8rem;
+  font-size: 1.65rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 5;
-  font-weight: 100;
-  letter-spacing: 0.1rem;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -140,7 +152,7 @@ body {
   background-color: #03071e;
   font-size: 1rem;
   font-weight: 50;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "SuisseIntl";
 }
 
 .page .pagetext h3 {
@@ -394,7 +406,7 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
-  font-family: "Nunito Sans";
+  font-family: "SuisseIntl";
   font-weight: 100;
   -webkit-box-shadow: -1px 2px 74px -3px rgba(0, 0, 0, 1);
   -moz-box-shadow: -1px 2px 74px -3px rgba(0, 0, 0, 1);
