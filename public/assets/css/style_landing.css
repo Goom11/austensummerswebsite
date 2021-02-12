@@ -78,7 +78,7 @@ p {
   top: 50px;
   height: 450px;
   width: 100%;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
 
@@ -103,23 +103,32 @@ p {
   text-align: center;
 }
 
-.section1 .pagecontainer {
+
+/*SECTION2*/
+.section2 {
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.section2 .pickone {
   position: absolute;
-  top: 60%;
-  width: 100%;
-  height: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
+  margin-top:-150px;
+  width:99%;
+  text-align: center;
+  color:white;
+  z-index: 5;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.2rem;
+  font-family: SuisseIntl;
+  font-weight: 600;
 }
 
 .page {
   z-index: 5;
   margin-top: -100px;
-  width: 240px;
-  height: 400px;
+  width: 250px;
+  height: 420px;
   background-color: white;
   overflow: hidden;
   transition: all 0.1s;
@@ -152,32 +161,43 @@ p {
   background-color: #03071e;
   font-size: 1rem;
   font-weight: 50;
-  font-family: "SuisseIntl";
+  font-family: "Nunito Sans", sans-serif;
 }
 
-.page .pagetext h3 {
-  margin-bottom: 0.5;
-  margin-top: 0.5rem;
-  font-size: 1.3rem;
+.page .pageimg .pane-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, 0.4);
+  display: flex;
+  justify-content: center;
+}
+
+.page .pageimg .pane-overlay h3 {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  font-family: SuisseIntl;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 #pg1 .pageimg {
-  background-image: url("../media/page1.jpg");
+  background-image: url("../media/academy_pane.jpg");
 }
+
 #pg2 .pageimg {
   background-image: url("../media/page2.jpg");
 }
+
 #pg3 .pageimg {
-  background-image: url("../media/page4.png");
-}
-#pg4 .pageimg {
-  background-image: url("../media/page4.jpg");
+  background-image: url("../media/immersion_pane.jpg");
 }
 
-/*SECTION2*/
-.section2 {
-  background-color: #f5f5f5;
-}
+
+
 
 /*SECTION3*/
 .black {
@@ -220,42 +240,6 @@ p {
 
 .videobox {
   width: 100%;
-}
-
-.mailbox {
-  height: 300px;
-  width: 100%;
-  box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
-  background-image: linear-gradient(45deg, darkgray, gray, lightsteelblue);
-  text-align: center;
-  border-radius: 5px;
-  margin: 3em auto;
-  padding: 1em;
-  color: white;
-  position: relative;
-}
-
-#promotion-counter {
-  color: gold;
-}
-
-.email-logo {
-  margin: 0;
-  padding: 0;
-  z-index: 6;
-  position: absolute;
-  top: -10%;
-  left: 41%;
-}
-
-.mailbox > h1 {
-  margin-top: 5%;
-  width: 100%;
-  font-size: 2rem;
-}
-
-.mail-input {
-  width: 300px;
 }
 
 .goldenbtn {

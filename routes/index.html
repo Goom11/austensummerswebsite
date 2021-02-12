@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="assets/css/style_landing.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style_footer.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -95,17 +96,16 @@
     </div>
 
     <!-- SECTION 2 -->
-    <div class="container section2 graybg">
-      <div class="row text-center">
-        <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+     <div class="container section2">
+     <h3 class="pickone mx-auto animated animatedFadeInUp fadeInUp delay-2">Pick One</h3>
+      <div class="row text-center mx-xl-5">
+        <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center">
           <div
             class="page rounded animated animatedFadeInUp fadeInUp"
             onClick="window.location.href='/academy'"
-            id="pg1"
-          >
-            <div class="pageimg"></div>
+            id="pg1">
+            <div class="pageimg"><div class="pane-overlay"><h3>Academy Mentorship</h3></div></div>
             <div class="pagetext">
-              <h3>Academy Mentorship</h3>
               <p>
                 90-day online mentorship program where I create your own customized dating strategy
                 and keep you accountable to reach your dating goals.
@@ -113,15 +113,13 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+        <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center">
           <div
             class="page rounded mt-resp-sm animated animatedFadeInUp fadeInUp delay-1"
             onClick="window.location.href='/bootcamp'"
-            id="pg2"
-          >
-            <div class="pageimg"></div>
+            id="pg2">
+            <div class="pageimg"><div class="pane-overlay"><h3>Miami Bootcamp</h3></div></div>
             <div class="pagetext">
-              <h3>Miami Bootcamp</h3>
               <p>
                 The most value-packed weekend program that exists where I’ll be your personal
                 wingman teaching you how to meet, attract, and date women in the best venues on the
@@ -130,34 +128,16 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+        <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center">
           <div
             class="page rounded mt-resp-md animated animatedFadeInUp fadeInUp delay-2"
             onClick="window.location.href='/immersion'"
-            id="pg3"
-          >
-            <div class="pageimg"></div>
+            id="pg3">
+            <div class="pageimg"><div class="pane-overlay"><h3>Miami Condo Immersion</h3></div></div>
             <div class="pagetext">
-              <h3>Miami Condo Immersion</h3>
               <p>
                 Thirty day Miami live-in program that guarantees results and turns you into a pickup
                 GOD.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
-          <div
-            class="page rounded mt-resp-md animated animatedFadeInUp fadeInUp delay-3"
-            onClick="window.location.href='/clientresults'"
-            id="pg4"
-          >
-            <div class="pageimg"></div>
-            <div class="pagetext">
-              <h3>CLIENT RESULTS</h3>
-              <p>
-                The most effective weekend program out there where I personally teach you how to
-                meet women in the best venues on the planet.
               </p>
             </div>
           </div>
@@ -230,7 +210,7 @@
         <div class="col-6 col-md-4 col-lg-2 d-none d-lg-block d-xxl-block">
           <div class="imgbox img12"></div>
         </div>
-        <div id="igref" class="pulsing">
+        <div id="igref">
           <i class="fab fa-instagram igref-icon"></i>
           <h3>Connect with Austen</h3>
           <hr />
@@ -252,7 +232,7 @@
             call with Austen, learn what he can do for you. Do not procrastinate, this opportunity
             won't be always here.
           </p>
-          <button class="goldenbtn pulsing">
+          <button class="goldenbtn">
             <span><i class="fas fa-calendar-check mx-2"></i></span>Get FREE Consulation Call
           </button>
         </div>
@@ -261,47 +241,54 @@
     </div>
 
     <footer class="pt-5">
-      <div class="footer-logo">
-        <img src="assets/media/logo.png" width="200px" height="35px" />
-      </div>
+    	<div class="footer-row d-flex justify-content-around">
+		      <div class="footer-logo">
+		        <img src="assets/media/logo.png" width="200px" height="35px" />
+		      </div>
 
-      <div class="footer-nav">
-        <b>AustenSummers</b>
-        <a href="/">Home</a>
-        <a href="/academy">Academy</a>
-        <a href="/bootcamp">Bootcamp</a>
-        <a href="/immersion">Immersion</a>
-        <a href="mailto:ancapausten@gmail.com">Contact Us</a>
-      </div>
+		      <div class="footer-nav">
+		        <b>AustenSummers</b>
+		        <a href="/">Home</a>
+		        <a href="/academy">Academy</a>
+		        <a href="/bootcamp">Bootcamp</a>
+		        <a href="/immersion">Immersion</a>
+		        <a href="mailto:ancapausten@gmail.com">Contact Us</a>
+		      </div>
 
-      <div class="footer-helpful">
-        <b>Helpful Links</b>
-        <a href="/terms">Terms and Conditions</a>
-        <a href="/jobs">Jobs</a>
-        <a href="/collab">Collab</a>
-        <a href="/disclaimer">Success Disclaimer</a>
-      </div>
+		      <div class="footer-helpful">
+		        <b>Helpful Links</b>
+		        <a href="/terms">Terms and Conditions</a>
+		        <a href="/jobs">Jobs</a>
+		        <a href="/collab">Collab</a>
+		        <a href="/disclaimer">Success Disclaimer</a>
+		      </div>
 
-      <div class="footer-icons">
-        <b class="mb-2">Connect With Us</b>
-        <div class="iconlist">
-          <a class="p-1" href="https://www.facebook.com/CoachAustenSummers/" target="_blank"
-            ><i class="fab fa-2x fa-facebook"></i
-          ></a>
-          <a class="p-1" href="https://www.instagram.com/austensummers/" target="_blank"
-            ><i class="fab fa-2x fa-instagram"></i
-          ></a>
-          <a
-            class="p-1"
-            href="https://www.youtube.com/channel/UCaQs5uEGmuNoj8GGVhnB3kA"
-            target="_blank"
-            ><i class="fab fa-2x fa-youtube"></i
-          ></a>
-          <a class="p-1" href="mailto:ancapausten@gmail.com"
-            ><i class="fas fa-2x fa-envelope-open"></i
-          ></a>
-        </div>
-      </div>
+		      <div class="footer-icons">
+		        <b class="mb-2">Connect With Us</b>
+		        <div class="iconlist">
+		          <a class="p-1" href="https://www.facebook.com/CoachAustenSummers/" target="_blank"
+		            ><i class="fab fa-2x fa-facebook"></i
+		          ></a>
+		          <a class="p-1" href="https://www.instagram.com/austensummers/" target="_blank"
+		            ><i class="fab fa-2x fa-instagram"></i
+		          ></a>
+		          <a
+		            class="p-1"
+		            href="https://www.youtube.com/channel/UCaQs5uEGmuNoj8GGVhnB3kA"
+		            target="_blank"
+		            ><i class="fab fa-2x fa-youtube"></i
+		          ></a>
+		          <a class="p-1" href="mailto:ancapausten@gmail.com"
+		            ><i class="fas fa-2x fa-envelope-open"></i
+		          ></a>
+		        </div>
+		      </div>
+		  
+		  </div>
+		<div class="footer-row d-flex justify-content-end mt-0 mt-md-5">
+		<p>© 2021 AustenSummers.com. All Rights Reserved.</p>
+		</div>
+
     </footer>
   </body>
 </html>
