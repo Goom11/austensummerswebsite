@@ -258,13 +258,13 @@ p {
   cursor: pointer;
 }
 
-.goldenbtn:hover {
-  transform: translateY(-5px);
+.blackbtn:hover {
+  transform: translateY(-2px);
 }
-.goldenbtn:active {
-  transform: scale(0.95);
+.blackbtn:active {
+  transform: scale(0.98);
 }
-.goldenbtn:focus {
+.blackbtn:focus {
   outline: none;
 }
 
@@ -377,9 +377,15 @@ p {
   font-weight: 700;
   transition: all 0.2s;
 }
-#igref > h2:hover {
-  cursor: pointer;
-  transform: scale(1.1);
+
+#igref:hover {
+  transform: translateY(-2px);
+}
+#igref:active {
+  transform: scale(0.98);
+}
+#igref:focus {
+  outline: none;
 }
 
 #igref > hr {
