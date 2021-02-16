@@ -102,6 +102,7 @@ body {
 .black {
   background-color: black;
   background-size: 100%;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -293,8 +294,6 @@ footer .footer-icons {
 
 /*RESPONSIVENESS*/
 @media only screen and (max-width: 1200px) {
-  .section1 h1 {
-  }
   .section1 h2 {
     width: 60%;
   }
