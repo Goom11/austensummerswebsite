@@ -78,12 +78,12 @@ p {
   top: 50px;
   height: 450px;
   width: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
 .section1 h1 {
-  font-size: 90px;
+  font-size: 40px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-weight: 600;
   width: 60%;
@@ -95,12 +95,15 @@ p {
 }
 
 .section1 h2 {
-  margin-top: 20px;
-  font-size: 1.65rem;
+  font-size: 1.4rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 5;
   font-weight: 300;
   text-align: center;
+}
+
+.mtop {
+  margin-top: 20px;
 }
 
 
@@ -125,10 +128,11 @@ p {
 }
 
 .page {
+  border-radius: 0.5rem!important;
   z-index: 5;
   margin-top: -100px;
   width: 250px;
-  height: 420px;
+  height: 285px;
   background-color: white;
   overflow: hidden;
   transition: all 0.1s;
@@ -189,7 +193,7 @@ p {
 }
 
 #pg2 .pageimg {
-  background-image: url("../media/page2.jpg");
+  background-image: url("../media/bootcamp6.png");
 }
 
 #pg3 .pageimg {
@@ -242,24 +246,9 @@ p {
   width: 100%;
 }
 
-.goldenbtn {
+.blackbtn {
   width: 300px;
-  background: radial-gradient(
-      ellipse farthest-corner at right bottom,
-      #fedb37 0%,
-      #fdb931 8%,
-      #9f7928 30%,
-      #8a6e2f 40%,
-      transparent 80%
-    ),
-    radial-gradient(
-      ellipse farthest-corner at left top,
-      #ffffff 0%,
-      #ffffac 8%,
-      #d1b464 25%,
-      #5d4a1f 62.5%,
-      #5d4a1f 100%
-    );
+  background-color: #03071e;
   border-radius: 10px;
 
   transition: all 0.1s ease;
@@ -366,22 +355,7 @@ p {
   position: absolute;
   width: 330px;
   height: 230px;
-  background: radial-gradient(
-      ellipse farthest-corner at right bottom,
-      #fedb37 0%,
-      #fdb931 8%,
-      #9f7928 30%,
-      #8a6e2f 40%,
-      transparent 80%
-    ),
-    radial-gradient(
-      ellipse farthest-corner at left top,
-      #ffffff 0%,
-      #ffffac 8%,
-      #d1b464 25%,
-      #5d4a1f 62.5%,
-      #5d4a1f 100%
-    );
+  background-color: #03071e;
   border-radius: 10px;
   top: 30%;
   left: 39%;
