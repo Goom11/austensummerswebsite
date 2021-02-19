@@ -63,7 +63,6 @@ p {
   background-position-x: center;
   background-position-y: -150px;
   background-repeat: no-repeat;
-  background-size: cover;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -75,8 +74,7 @@ p {
 
 .section1 .overlay {
   position: absolute;
-  top: 50px;
-  height: 450px;
+  height: inherit;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
