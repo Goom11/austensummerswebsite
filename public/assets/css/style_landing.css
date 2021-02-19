@@ -129,7 +129,6 @@ p {
   z-index: 5;
   margin-top: -100px;
   width: 250px;
-  height: 285px;
   background-color: white;
   overflow: hidden;
   transition: all 0.1s;
@@ -470,7 +469,6 @@ footer .footer-icons {
   }
   .page {
     width: 300px;
-    height: 420px;
   }
   .page .pagetext > p {
     font-size: 1.2rem;
@@ -521,7 +519,6 @@ footer .footer-icons {
   }
   .page {
     width: 350px;
-    height: 450px;
   }
   .page .pagetext > p {
     font-size: 1.4rem;
