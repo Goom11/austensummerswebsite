@@ -247,6 +247,11 @@ video {
   border-color: gray !important;
 }
 
+#packages {
+  position: relative;
+  top: -50px;
+}
+
 /*SECTION5*/
 .section5 {
   overflow: hidden;
