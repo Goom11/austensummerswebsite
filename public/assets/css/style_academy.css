@@ -135,8 +135,27 @@ body {
 /*SECTION2*/
 .section2 {
   background-color: #f5f5f5;
-  padding: 5rem;
   letter-spacing: 1px;
+}
+
+.subtitle {
+  color: grey;
+}
+
+.shorter-table {
+  flex-grow: 1;
+}
+
+.btn-pay-deposit {
+  color: #0f0f0f;
+  background-color: #ffcc66;
+  border-color: #ffcc66;
+  font-size: 200%;
+  width: 100%;
+}
+
+.btn-pay-deposit:hover {
+  color: #0f0f0f;
 }
 
 /* SECTION 3*/
@@ -179,14 +198,7 @@ body {
 .gold-hr {
   height: 1px;
   width: 50%;
-  background: linear-gradient(
-    to right,
-    #bf953f,
-    #fcf6ba,
-    #b38728,
-    #fbf5b7,
-    #aa771c
-  );
+  background-color: black;
 }
 
 /* SECTION4 */
