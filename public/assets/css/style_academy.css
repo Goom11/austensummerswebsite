@@ -124,6 +124,7 @@ body {
 }
 
 .blackbtn:hover {
+  color: white;
   transform: translateY(-2px);
 }
 .blackbtn:active {

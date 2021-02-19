@@ -152,6 +152,10 @@ body {
   cursor: pointer;
 }
 
+.blackbtn:hover {
+  color: white;
+}
+
 .goldenbtn:hover {
   transform: translateY(-5px);
 }
