@@ -146,6 +146,14 @@ body {
   flex-grow: 1;
 }
 
+.collapse.show {
+  display: contents;
+}
+
+.collapsing {
+  display: none;
+}
+
 .btn-pay-deposit {
   color: #0f0f0f;
   background-color: #ffcc66;
@@ -242,6 +250,11 @@ video {
 /*SECTION5*/
 .section5 {
   overflow: hidden;
+}
+
+.btn {
+  white-space: normal !important;
+  word-wrap: break-word;
 }
 
 .bootcamp {
