@@ -52,7 +52,6 @@ body {
   background-color: #f5f5f5;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -63,8 +62,6 @@ body {
 
 .section1 .overlay {
   position: absolute;
-  top: 50px;
-  height: 350px;
   width: 100%;
   background: rgba(0, 0, 0, 0.6);
   z-index: 1;
