@@ -91,6 +91,9 @@
 }
 
 @media screen and (max-width:1000px) {
+  .faq-btn span:nth-child(2) {
+  margin-left:-42px;
+  }
   .faq-btn h2 {
     font-size:1.5rem;
   }
