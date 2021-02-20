@@ -70,3 +70,28 @@
 .pulsing {
   animation: pulse 1s linear infinite;
 }
+
+.faq-btn {
+  cursor:pointer;
+  width:100%;
+}
+
+.faq-btn span:nth-child(2) {  /* Stack Minus and Plus Icons Together */
+  margin-left:-50px;
+}
+
+.faq-icon {
+  transition:opacity 0.2s;
+  opacity:0;
+  height:0;
+}
+.faq-icon.show {
+  opacity:1;
+  height:auto;
+}
+
+@media screen and (max-width:1000px) {
+  .faq-btn h2 {
+    font-size:1.5rem;
+  }
+}
