@@ -160,6 +160,7 @@ body {
   border-color: #ffcc66;
   font-size: 200%;
   width: 100%;
+  max-width: 300px;
 }
 
 .btn-pay-deposit:hover {
