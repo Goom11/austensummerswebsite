@@ -52,6 +52,10 @@ body {
   color: black;
 }
 
+.carousel-item img {
+  height: 600px;
+}
+
 /*SECTION1*/
 .section1 {
   background-image: url("https://images.unsplash.com/photo-1611556462505-07afe89b0025?ixid=MXwxMjA3fDB8MHxwaG90by1vZi10aGUtZGF5fHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&dpr=2&auto=format%2Ccompress&fit=crop&w=599&h=310");
