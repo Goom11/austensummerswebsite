@@ -55,6 +55,12 @@ body {
   word-wrap: break-word;
 }
 
+#select-immersion-duration {
+  max-width: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
 .btn-pay-deposit {
   color: #0f0f0f;
   background-color: #ffcc66;
