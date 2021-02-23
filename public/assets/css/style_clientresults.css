@@ -23,14 +23,63 @@
   font-weight: 600;
 }
 
+/*SECTION2*/
+.testimonial-box {
+  height: 250px;
+  padding: 0;
+}
+
+.testimonial-video {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  transition: all 1s;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: #dcdcdc;
+  background-color: #f5f5f5;
   font-family: "SuisseIntl";
+}
+
+.collapse.show {
+  display: contents;
+}
+
+.collapsing {
+  display: none;
+}
+
+#packages {
+  position: relative;
+  top: -75px;
+}
+
+.btn {
+  white-space: normal !important;
+  word-wrap: break-word;
+}
+
+.btn-pay-deposit {
+  color: #0f0f0f;
+  background-color: #ffcc66;
+  border-color: #ffcc66;
+  font-size: 200%;
+  width: 100%;
+  max-width: 300px;
+}
+
+.btn-pay-deposit:hover {
+  color: #0f0f0f;
+}
+
+.subtitle {
+  color: grey;
 }
 
 /*NAVBAR*/
@@ -52,17 +101,14 @@ body {
   color: black;
 }
 
-.carousel-item img {
-  height: 600px;
-}
-
 /*SECTION1*/
 .section1 {
-  background-image: url("https://images.unsplash.com/photo-1611556462505-07afe89b0025?ixid=MXwxMjA3fDB8MHxwaG90by1vZi10aGUtZGF5fHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&dpr=2&auto=format%2Ccompress&fit=crop&w=599&h=310");
+  background-image: url("../media/miami2.jpeg");
   background-color: #f5f5f5;
   background-position: center;
+  background-position-y: -150px;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,8 +118,9 @@ body {
 
 .section1 .overlay {
   position: absolute;
+  height: inherit;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -100,51 +147,94 @@ body {
   text-align: center;
 }
 
-.golden {
-  background-color: #f3ec78;
-  background: radial-gradient(
-      ellipse farthest-corner at right bottom,
-      #fedb37 0%,
-      #fdb931 30%,
-      #9f7928 50%,
-      #8a6e2f 50%,
-      #fdb931 100%
-    ),
-    radial-gradient(
-      ellipse farthest-corner at left top,
-      #fedb37 20%,
-      #fdb931 30%,
-      #d1b464 55%,
-      #5d4a1f 72.5%,
-      #5d4a1f 100%
-    );
-
+.black {
+  background-color: black;
   background-size: 100%;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  font-weight: 700;
+}
+
+.blackbtn {
+  width: 300px;
+  background-color: black;
+  border-radius: 10px;
+  transition: all 0.1s ease;
+  border: none;
+  box-shadow: 0 4px 12px 0 rgba(152, 160, 180, 10);
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+
+.blackbtn:hover {
+  color: white;
+}
+
+.goldenbtn:hover {
+  transform: translateY(-5px);
+}
+.goldenbtn:active {
+  transform: scale(0.95);
+}
+.goldenbtn:focus {
+  outline: none;
+}
+
+/*SECTION2*/
+.section2 {
+  background-color: #f5f5f5;
+  padding: 5rem;
+  letter-spacing: 1px;
+}
+
+/* SECTION 3*/
+.section3 {
+  background: #f5f5f5;
+}
+
+.perk {
+  width: 500px;
+  height: 400px;
+  border-radius: 4px;
+  border: 2px solid #eee;
+  background: white;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.perk:hover {
+  box-shadow: 0 18px 30px rgb(50 50 93 / 10%), 0 8px 12px rgb(0 0 0 / 7%);
+  transform: scale(1.04);
+}
+.perk img {
+  margin: 1.5rem 0;
+}
+.perk p {
+  width: 70%;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+.perk h3 {
+  font-size: 1.4rem;
+}
+
+.videobox {
+  width: 100%;
 }
 
 .gold-hr {
   height: 1px;
   width: 50%;
-  background: linear-gradient(
-    to right,
-    #bf953f,
-    #fcf6ba,
-    #b38728,
-    #fbf5b7,
-    #aa771c
-  );
+  background-color: black;
 }
 
-video {
-  object-fit: cover;
-}
-
-/*SECTION2*/
+/* SECTION4 */
 .testimonial-box {
   height: 250px;
   padding: 0;
@@ -158,43 +248,23 @@ video {
   transition: all 1s;
 }
 
-.goldenbtn {
-  width: 300px;
-  background: radial-gradient(
-      ellipse farthest-corner at right bottom,
-      #fedb37 0%,
-      #fdb931 8%,
-      #9f7928 30%,
-      #8a6e2f 40%,
-      transparent 80%
-    ),
-    radial-gradient(
-      ellipse farthest-corner at left top,
-      #ffffff 0%,
-      #ffffac 8%,
-      #d1b464 25%,
-      #5d4a1f 62.5%,
-      #5d4a1f 100%
-    );
-  border-radius: 10px;
-
-  transition: all 0.1s ease;
-  border: none;
-  box-shadow: 0 4px 12px 0 rgba(152, 160, 180, 10);
-  color: white;
-  font-size: 1.2rem;
-  padding: 0.6rem;
-  cursor: pointer;
+video {
+  object-fit: cover;
 }
 
-.goldenbtn:hover {
-  transform: translateY(-5px);
+.book-table {
+  width: 60%;
+  height: 300px;
+  background: lightsteelblue;
 }
-.goldenbtn:active {
-  transform: scale(0.95);
+
+.section4 ul {
+  list-style-type: none;
 }
-.goldenbtn:focus {
-  outline: none;
+
+.description {
+  height: 30px;
+  width: 80%;
 }
 
 .bb {
@@ -202,22 +272,33 @@ video {
   border-color: gray !important;
 }
 
-.perk {
-  width: 100%;
-  border-radius: 4px;
-  border: 2px solid #eee;
-  background: white;
-  transition: all 0.2s;
+/*SECTION5*/
+.section5 {
+  overflow: hidden;
 }
-.perk:hover {
-  box-shadow: 0 18px 30px rgb(50 50 93 / 10%), 0 8px 12px rgb(0 0 0 / 7%);
-  transform: scale(1.04);
+
+.bootcamp {
+  height: 60px;
+  width: 80%;
+}
+
+.bootcamp .col-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: 500;
+}
+
+.bootcamp .btn {
+  width: 200px;
 }
 
 /*FOOTER*/
 footer {
   background-color: lightgray;
   color: gray;
+
   display: flex;
   justify-content: space-around;
   min-height: 250px;
@@ -256,11 +337,11 @@ footer .footer-icons {
   align-items: center;
 }
 
+/*RESPONSIVENESS*/
 @media only screen and (max-width: 1200px) {
   .section1 h2 {
     width: 60%;
   }
-
   footer {
     padding-left: 100px;
     padding-right: 100px;
@@ -274,7 +355,6 @@ footer .footer-icons {
   .section1 h2 {
     width: 70%;
   }
-
   footer {
     padding-left: 50px;
     padding-right: 50px;
@@ -289,7 +369,6 @@ footer .footer-icons {
   .section1 h2 {
     width: 75%;
   }
-
   footer {
     padding-left: 15px;
     padding-right: 15px;
@@ -311,7 +390,6 @@ footer .footer-icons {
   .section4 .bootcamp {
     width: 100%;
   }
-
   footer {
     flex-direction: column;
     padding: 3rem 0 1rem 5rem;
@@ -319,7 +397,6 @@ footer .footer-icons {
   footer .footer-icons {
     align-items: flex-start;
   }
-
   .iconlist > b {
     margin: 0;
   }
@@ -327,7 +404,7 @@ footer .footer-icons {
 
 @media only screen and (max-width: 400px) {
   .section1 h1 {
-    width: 90%;
+    width: 90%; /*color:orange;*/
     font-size: 2rem;
   }
 }
