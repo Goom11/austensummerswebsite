@@ -33,7 +33,13 @@ body {
   font-family: "SuisseIntl";
 }
 
+.collapse.show {
+  display: contents;
+}
 
+.collapsing {
+  display: none;
+}
 
 #packages {
   position: relative;

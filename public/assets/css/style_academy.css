@@ -40,12 +40,17 @@ body {
   box-shadow: 0 6px 6px -4px rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
-
 .active {
   padding: 0 5px 5px 5px;
   border-bottom: white 2px solid;
 }
-
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark {
+  color: black;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: black;
+}
 
 /*SECTION1*/
 .section1 {
@@ -141,6 +146,13 @@ body {
   flex-grow: 1;
 }
 
+.collapse.show {
+  display: contents;
+}
+
+.collapsing {
+  display: none;
+}
 
 .btn-pay-deposit {
   color: #0f0f0f;
@@ -246,7 +258,6 @@ video {
   overflow: hidden;
 }
 
-
 .btn {
   white-space: normal !important;
   word-wrap: break-word;
@@ -267,21 +278,6 @@ video {
 
 .bootcamp .btn {
   width: 200px;
-}
-
-.section_questions {
-  	padding:5rem;
-}
-
-.section_questions ul {
-	font-size:1.5rem;
-}
-
-.center-breaks {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center; 
 }
 
 /*FOOTER*/
@@ -332,10 +328,6 @@ footer .footer-icons {
   .section1 h2 {
     width: 60%;
   }
-  .section6 h1 {
-  	font-size:2.1rem;
-  }
-
   footer {
     padding-left: 100px;
     padding-right: 100px;
@@ -348,25 +340,6 @@ footer .footer-icons {
   }
   .section1 h2 {
     width: 70%;
-  }
-  .section2 h2 {
-  	font-size:1.8rem;
-  }
-  .section5 h2 {
-	font-size:1.5rem;
-  }
-  .section5 h1 { 
-  	font-size:1.8rem;
-  }
-  .section_questions {
-  	max-width: 100%;
-  	padding:3rem 4rem;
-  }
-  .section_questions h1 {
-  	font-size:1.8rem;
-  }
-  .section6 h1 {
-  	font-size:2rem;
   }
   footer {
     padding-left: 50px;
