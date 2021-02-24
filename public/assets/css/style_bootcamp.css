@@ -33,13 +33,6 @@ body {
   font-family: "SuisseIntl";
 }
 
-.collapse.show {
-  display: contents;
-}
-
-.collapsing {
-  display: none;
-}
 
 #packages {
   position: relative;
@@ -182,6 +175,7 @@ body {
   background: #f5f5f5;
 }
 
+
 .perk {
   width: 500px;
   height: 400px;
@@ -256,6 +250,15 @@ video {
 .bb {
   border-width: 1px !important;
   border-color: gray !important;
+}
+
+
+.section_learn p {
+  font-size:1.5;
+}
+
+.section_questions {
+  font-size:1.3rem;
 }
 
 /*SECTION5*/
@@ -341,6 +344,11 @@ footer .footer-icons {
   .section1 h2 {
     width: 70%;
   }
+  .section2 {
+    max-width: 100%;
+    padding:2rem;
+  }
+
   footer {
     padding-left: 50px;
     padding-right: 50px;
@@ -392,5 +400,8 @@ footer .footer-icons {
   .section1 h1 {
     width: 90%; /*color:orange;*/
     font-size: 2rem;
+  }
+  .section2 { 
+  padding:0.5rem;
   }
 }

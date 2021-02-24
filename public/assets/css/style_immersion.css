@@ -33,13 +33,7 @@ body {
   font-family: "SuisseIntl";
 }
 
-.collapse.show {
-  display: contents;
-}
 
-.collapsing {
-  display: none;
-}
 
 #packages {
   position: relative;
@@ -290,6 +284,10 @@ video {
   width: 200px;
 }
 
+.section_questions {
+  font-size:1.3rem;
+}
+
 /*FOOTER*/
 footer {
   background-color: lightgray;
@@ -350,6 +348,10 @@ footer .footer-icons {
   }
   .section1 h2 {
     width: 70%;
+  }
+  .section2 {
+    max-width: 100%;
+    padding:2rem;
   }
   footer {
     padding-left: 50px;

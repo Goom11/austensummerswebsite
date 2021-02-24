@@ -90,6 +90,15 @@
   height:auto;
 }
 
+@media screen and (max-width:1600px) {
+  .faq-btn span:nth-child(2) {
+  margin-left:-45px;
+  }
+  .faq-btn h2 {
+    font-size:1.6rem;
+  }
+}
+
 @media screen and (max-width:1000px) {
   .faq-btn span:nth-child(2) {
   margin-left:-42px;
