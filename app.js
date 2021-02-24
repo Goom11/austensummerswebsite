@@ -4,7 +4,7 @@ var fs = require('fs'),
     express = require('express'),
     router = require("./routes/index");
 
-var port = 8000;
+var port = 80;
 
 var options = {
     key: fs.readFileSync('/etc/letsencrypt/live/austensummers.com/privkey.pem'),
