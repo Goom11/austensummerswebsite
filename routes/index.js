@@ -8,7 +8,6 @@ router.get("/.well-known/acme-challenge/Mi6cv3k8yXVZTmrWfJFVlTTupOiuWPKRroCeu1QJ
   res.send("Mi6cv3k8yXVZTmrWfJFVlTTupOiuWPKRroCeu1QJ1mk.3Luu3iycHojEMnXuYlPpDZlywOShzGIvtre3S1yQHfo");
 });
 
-
 /* GET home page. */
 router.get("/", function (req, res, next) {
   res.sendFile(path.join(__dirname + "/index.html"));
