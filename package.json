@@ -9,6 +9,9 @@
   "author": "etohimself, Groom11",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "fsm": "^1.0.2",
+    "http": "^0.0.1-security",
+    "https": "^1.0.0"
   }
 }
