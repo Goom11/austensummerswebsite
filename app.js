@@ -4,25 +4,30 @@ var fs = require('fs'),
     express = require('express'),
     router = require("./routes/index");
 
+//Port
 var port = 80;
 
-var options = {
-    key: fs.readFileSync('/etc/letsencrypt/live/austensummers.com/privkey.pem'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/austensummers.com/cert.pem'),
-};
-
+//App
 var app = express();
-
-//Middlewares
 app.use(express.static("public"));
 
 //Routing
 app.use("/", router);
 
-var server = https.createServer(options, app).listen(port, function(){
-  console.log("Express server listening on port " + port);
+
+const httpServer = http.createServer(app);
+const httpsServer = https.createServer({
+  key: fs.readFileSync('/etc/letsencrypt/live/austensummers.com/privkey.pem'),
+  cert: fs.readFileSync('/etc/letsencrypt/live/austensummers.com/fullchain.pem'),
+}, app);
+
+
+httpServer.listen(80, () => {
+    console.log('HTTP Server running on port 80');
 });
 
-
+httpsServer.listen(443, () => {
+    console.log('HTTPS Server running on port 443');
+});
 
 
