@@ -9,9 +9,9 @@ const app = express();
 
 //SSL
 var credentials = {
-     key: fs.readFileSync('/etc/letsencrypt/live/austensummers.com/privkey.pem'),
-     cert: fs.readFileSync('/etc/letsencrypt/live/austensummers.com/fullchain.pem'),
-     ca: fs.readFileSync('/etc/letsencrypt/live/austensummers.com/chain.pem')
+     key: fs.readFileSync('/etc/letsencrypt/live/austensummers.com/privkey.pem', 'utf8'),
+     cert: fs.readFileSync('/etc/letsencrypt/live/austensummers.com/fullchain.pem', 'utf8'),
+     ca: fs.readFileSync('/etc/letsencrypt/live/austensummers.com/chain.pem', 'utf8')
 }
 
 
