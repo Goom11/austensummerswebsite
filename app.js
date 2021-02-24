@@ -8,7 +8,7 @@ const http = require('http');
 const app = express();
 
 //SSL
-var options = {
+var credentials = {
      key: fs.readFileSync('/etc/letsencrypt/live/austensummers.com/privkey.pem'),
      cert: fs.readFileSync('/etc/letsencrypt/live/austensummers.com/fullchain.pem'),
      ca: fs.readFileSync('/etc/letsencrypt/live/austensummers.com/chain.pem')
@@ -23,5 +23,13 @@ app.use(express.static("public"));
 app.use("/", router);
 
 //Let's Run the App
-var server = https.createServer(options, app);
-server.listen(8080, '127.0.0.1');
+const httpServer = http.createServer(app);
+const httpsServer = https.createServer(credentials, app);
+
+httpServer.listen(80, () => {
+	console.log('HTTP Server running on port 80');
+});
+
+httpsServer.listen(443, () => {
+	console.log('HTTPS Server running on port 443');
+});
