@@ -2,7 +2,7 @@ const express = require("express");
 const router = require("./routes/index");
 const fs = require('fs');
 const https = require('https');
-const https = require('http');
+const http = require('http');
 
 //App Setup
 const app = express();
