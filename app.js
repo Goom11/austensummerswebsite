@@ -1,20 +1,17 @@
-const express = require("express");
-const router = require("./routes/index");
-const fs = require('fs');
-const https = require('https');
-const http = require('http');
+var fs = require('fs'),
+    http = require('http'),
+    https = require('https'),
+    express = require('express'),
+    router = require("./routes/index");
 
-//App Setup
-const app = express();
+var port = 8000;
 
-//SSL
-var credentials = {
-     key: fs.readFileSync('/etc/letsencrypt/live/austensummers.com/privkey.pem', 'utf8'),
-     cert: fs.readFileSync('/etc/letsencrypt/live/austensummers.com/fullchain.pem', 'utf8'),
-     ca: fs.readFileSync('/etc/letsencrypt/live/austensummers.com/chain.pem', 'utf8')
-}
+var options = {
+    key: fs.readFileSync('/etc/letsencrypt/live/austensummers.com/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/austensummers.com/cert.pem'),
+};
 
-
+var app = express();
 
 //Middlewares
 app.use(express.static("public"));
@@ -22,14 +19,10 @@ app.use(express.static("public"));
 //Routing
 app.use("/", router);
 
-//Let's Run the App
-const httpServer = http.createServer(app);
-const httpsServer = https.createServer(credentials, app);
-
-httpServer.listen(80, () => {
-	console.log('HTTP Server running on port 80');
+var server = https.createServer(options, app).listen(port, function(){
+  console.log("Express server listening on port " + port);
 });
 
-httpsServer.listen(443, () => {
-	console.log('HTTPS Server running on port 443');
-});
+
+
+
