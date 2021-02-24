@@ -8,9 +8,9 @@ const http = require('http');
 const app = express();
 
 //SSL
-const privateKey = fs.readFileSync('./ssl/privkey.pem', 'utf8');
-const certificate = fs.readFileSync('./ssl/cert.pem', 'utf8');
-const ca = fs.readFileSync('./ssl/chain.pem', 'utf8');
+const privateKey = fs.readFileSync(__dirname + './ssl/privkey.pem');
+const certificate = fs.readFileSync(__dirname + './ssl/cert.pem');
+const ca = fs.readFileSync(__dirname + './ssl/chain.pem');
 
 const credentials = {
 	key: privateKey,
