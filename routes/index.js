@@ -8,6 +8,11 @@ router.get("/.well-known/acme-challenge/Mi6cv3k8yXVZTmrWfJFVlTTupOiuWPKRroCeu1QJ
   res.send("Mi6cv3k8yXVZTmrWfJFVlTTupOiuWPKRroCeu1QJ1mk.3Luu3iycHojEMnXuYlPpDZlywOShzGIvtre3S1yQHfo");
 });
 
+router.get("/.well-known/acme-challenge/ab7mULAPx9Uj5vmEavpCaDxD7C5AbwzHRpsfekYqZh4", function (req, res, next) {
+  res.send("ab7mULAPx9Uj5vmEavpCaDxD7C5AbwzHRpsfekYqZh4.3Luu3iycHojEMnXuYlPpDZlywOShzGIvtre3S1yQHfo");
+});
+
+
 /* GET home page. */
 router.get("/", function (req, res, next) {
   res.sendFile(path.join(__dirname + "/index.html"));
