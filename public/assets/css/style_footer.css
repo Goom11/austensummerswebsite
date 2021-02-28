@@ -1,88 +1,85 @@
 /*FOOTER*/
 footer {
- background-color: lightgray;
- color: gray;
+  background-color: lightgray;
+  color: gray;
 
- display: flex;
- flex-direction: column;
- min-height: 250px;
- padding-left: 10vw;
- padding-right: 10vw;
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 footer a {
- color: gray;
- transition: all 0.4s;
+  color: gray;
+  transition: all 0.4s;
 }
 footer a:hover {
- color: gray;
- transform: translateX(10px);
+  color: gray;
+  transform: translateX(10px);
 }
 
 footer .footer-row .footer-logo {
- flex-basis: 20%;
- display: flex;
- flex-direction: column;
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
 }
 footer .footer-row .footer-nav {
- flex-basis: 20%;
- display: flex;
- flex-direction: column;
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
 }
 footer .footer-row .footer-helpful {
- flex-basis: 20%;
- display: flex;
- flex-direction: column;
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
 }
 footer .footer-row .footer-icons {
- flex-basis: 20%;
- display: flex;
- flex-direction: column;
- align-items: center;
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media only screen and (max-width: 1200px) {
- footer {
-  padding-left: 100px;
-  padding-right: 100px;
- }
+  footer {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
-
 
 @media only screen and (max-width: 991.5px) {
   footer {
-  padding-left: 50px;
-  padding-right: 50px;
- }
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
-
 
 @media only screen and (max-width: 850px) {
   footer {
-  padding-left: 15px;
-  padding-right: 15px;
- }
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
-
 @media only screen and (max-width: 768px) {
- footer .footer-row  {
-  flex-direction: column;
-  padding: 3rem 0 1rem 5rem;
- }
- footer .footer-row .footer-icons {
-  align-items: flex-start;
- }
+  footer .footer-row {
+    flex-direction: column;
+    padding: 3rem 0 1rem 5rem;
+  }
+  footer .footer-row .footer-icons {
+    align-items: flex-start;
+  }
 
- .iconlist > b {
-  margin: 0;
- }
+  .iconlist > b {
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 400px) {
- footer .footer-row  {
-  flex-direction: column;
-  padding: 0;
-  padding-left:2rem;
- }
+  footer .footer-row {
+    flex-direction: column;
+    padding: 0;
+    padding-left: 2rem;
+  }
 }

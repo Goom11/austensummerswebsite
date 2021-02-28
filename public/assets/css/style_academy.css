@@ -46,7 +46,6 @@ body {
   border-bottom: white 2px solid;
 }
 
-
 /*SECTION1*/
 .section1 {
   background-image: url("../media/miami2.jpeg");
@@ -140,7 +139,6 @@ body {
 .shorter-table {
   flex-grow: 1;
 }
-
 
 .btn-pay-deposit {
   color: #0f0f0f;
@@ -246,7 +244,6 @@ video {
   overflow: hidden;
 }
 
-
 .btn {
   white-space: normal !important;
   word-wrap: break-word;
@@ -270,18 +267,18 @@ video {
 }
 
 .section_questions {
-  	padding:5rem;
+  padding: 5rem;
 }
 
 .section_questions ul {
-	font-size:1.5rem;
+  font-size: 1.5rem;
 }
 
 .center-breaks {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: center; 
+  text-align: center;
 }
 
 /*FOOTER*/
@@ -333,7 +330,7 @@ footer .footer-icons {
     width: 60%;
   }
   .section6 h1 {
-  	font-size:2.1rem;
+    font-size: 2.1rem;
   }
 
   footer {
@@ -350,23 +347,23 @@ footer .footer-icons {
     width: 70%;
   }
   .section2 h2 {
-  	font-size:1.8rem;
+    font-size: 1.8rem;
   }
   .section5 h2 {
-	font-size:1.5rem;
+    font-size: 1.5rem;
   }
-  .section5 h1 { 
-  	font-size:1.8rem;
+  .section5 h1 {
+    font-size: 1.8rem;
   }
   .section_questions {
-  	max-width: 100%;
-  	padding:3rem 4rem;
+    max-width: 100%;
+    padding: 3rem 4rem;
   }
   .section_questions h1 {
-  	font-size:1.8rem;
+    font-size: 1.8rem;
   }
   .section6 h1 {
-  	font-size:2rem;
+    font-size: 2rem;
   }
   footer {
     padding-left: 50px;

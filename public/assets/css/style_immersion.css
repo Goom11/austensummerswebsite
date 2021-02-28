@@ -33,8 +33,6 @@ body {
   font-family: "SuisseIntl";
 }
 
-
-
 #packages {
   position: relative;
   top: -75px;
@@ -285,7 +283,7 @@ video {
 }
 
 .section_questions {
-  font-size:1.3rem;
+  font-size: 1.3rem;
 }
 
 /*FOOTER*/
@@ -351,7 +349,7 @@ footer .footer-icons {
   }
   .section2 {
     max-width: 100%;
-    padding:2rem;
+    padding: 2rem;
   }
   footer {
     padding-left: 50px;

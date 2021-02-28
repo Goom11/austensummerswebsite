@@ -33,7 +33,6 @@ body {
   font-family: "SuisseIntl";
 }
 
-
 #packages {
   position: relative;
   top: -75px;
@@ -175,7 +174,6 @@ body {
   background: #f5f5f5;
 }
 
-
 .perk {
   width: 500px;
   height: 400px;
@@ -252,13 +250,12 @@ video {
   border-color: gray !important;
 }
 
-
 .section_learn p {
-  font-size:1.5;
+  font-size: 1.5;
 }
 
 .section_questions {
-  font-size:1.3rem;
+  font-size: 1.3rem;
 }
 
 /*SECTION5*/
@@ -346,7 +343,7 @@ footer .footer-icons {
   }
   .section2 {
     max-width: 100%;
-    padding:2rem;
+    padding: 2rem;
   }
 
   footer {
@@ -401,7 +398,7 @@ footer .footer-icons {
     width: 90%; /*color:orange;*/
     font-size: 2rem;
   }
-  .section2 { 
-  padding:0.5rem;
+  .section2 {
+    padding: 0.5rem;
   }
 }
