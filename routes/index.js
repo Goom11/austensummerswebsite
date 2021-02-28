@@ -42,4 +42,17 @@ router.get("/terms", function (req, res, next) {
   res.sendFile(path.join(__dirname + "/terms.html"));
 });
 
+router.get("/collab", function (req, res, next) {
+  res.sendFile(path.join(__dirname + "/collab.html"));
+});
+
+router.get("/disclaimer", function (req, res, next) {
+  res.sendFile(path.join(__dirname + "/disclaimer.html"));
+});
+
+router.get('*', function(req, res) {
+  res.redirect('/');
+});
+
+
 module.exports = router;

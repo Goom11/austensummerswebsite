@@ -46,6 +46,11 @@ body {
   border-bottom: white 2px solid;
 }
 
+.collabform {
+  margin: 0 auto;
+  display: block;
+}
+
 /*SECTION1*/
 .section1 {
   background-image: url("../media/miami2.jpeg");
