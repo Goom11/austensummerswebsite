@@ -83,11 +83,25 @@ p {
   z-index: 1;
 }
 
+.section1 ul {
+  z-index: 5;
+  position: relative;
+  top: 1%;
+}
+
+.section1 li {
+  background-color: rgba(255, 165, 0, 0);
+  border: 0;
+  font-size: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .section1 h1 {
   font-size: 40px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-weight: 600;
-  width: 60%;
+  width: 80%;
   margin: 10px 0 0 0;
   z-index: 5;
   line-height: 1;
@@ -130,7 +144,7 @@ p {
 .page {
   border-radius: 0.5rem !important;
   z-index: 5;
-  margin-top: -100px;
+  margin-top: -80px;
   width: 250px;
   background-color: white;
   overflow: hidden;
@@ -558,8 +572,21 @@ footer .footer-icons {
 @media only screen and (max-width: 400px) {
   .section1 h1 {
     width: 90%;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    position: relative;
+    top: -5%;
   }
+
+  .section1 ul {
+    position: relative;
+    top: -5%;
+    margin-top: 20px;
+  }
+
+  .section1 li {
+    font-size: 25px;
+  }
+
   .section1 h2 {
     font-size: 1.2rem;
     color: white;
