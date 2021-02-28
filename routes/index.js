@@ -50,6 +50,10 @@ router.get("/disclaimer", function (req, res, next) {
   res.sendFile(path.join(__dirname + "/disclaimer.html"));
 });
 
+router.get("/jobs", function (req, res, next) {
+  res.sendFile(path.join(__dirname + "/jobs.html"));
+});
+
 router.get('*', function(req, res) {
   res.redirect('/');
 });
