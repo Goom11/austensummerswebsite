@@ -54,6 +54,10 @@ router.get("/jobs", function (req, res, next) {
   res.sendFile(path.join(__dirname + "/jobs.html"));
 });
 
+router.get("/contact", function (req, res, next) {
+  res.sendFile(path.join(__dirname + "/contact.html"));
+});
+
 router.get('*', function(req, res) {
   res.redirect('/');
 });
