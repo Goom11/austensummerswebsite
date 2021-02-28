@@ -63,7 +63,6 @@ p {
   background-repeat: no-repeat;
   background-position-x: center;
 
-  background-size: cover;
   background-position-y: -23vw;
 
   height: 550px;
@@ -611,5 +610,11 @@ footer .footer-icons {
   }
   #igref > h3 {
     font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .section1 {
+    background-size: cover;
   }
 }
