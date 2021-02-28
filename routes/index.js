@@ -38,4 +38,8 @@ router.get("/clientresults", function (req, res, next) {
   res.sendFile(path.join(__dirname + "/clientresults.html"));
 });
 
+router.get("/terms", function (req, res, next) {
+  res.sendFile(path.join(__dirname + "/terms.html"));
+});
+
 module.exports = router;
