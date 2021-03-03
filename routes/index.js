@@ -59,9 +59,12 @@ router.get("/contact", function (req, res, next) {
   res.sendFile(path.join(__dirname + "/contact.html"));
 });
 
-router.get('*', function(req, res) {
-  res.redirect('/');
+router.get("/pay", function (req, res, next) {
+  res.sendFile(path.join(__dirname + "/payments.html"));
 });
 
+router.get("*", function (req, res) {
+  res.redirect("/");
+});
 
 module.exports = router;
