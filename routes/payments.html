@@ -124,66 +124,163 @@
     <!-- SECTION1 -->
     <div class="container-fluid section1">
       <div class="overlay"></div>
-      <h1 class="animated animatedFadeInUp fadeInUp">Austen Summers Payments</h1>
+      <h1 class="animated animatedFadeInUp fadeInUp">Payment Options</h1>
     </div>
 
     <!-- SECTION2 -->
-    <div class="container section2 mb-0 p-4 pt-5 text-center">
+    <div class="container section2 mb-0 p-4 pt-5 text-center" id="paymentoptions">
       <h2 class="animated animatedFadeInUp fadeInUp delay-1">Payment Services</h2>
       <div class="row my-3 text-center">
         <div class="col">
-          <p>
-            Venmo:
-            <a href="https://venmo.com/code?user_id=1632127569362944774"> @austensummers </a>
-          </p>
-          <img src="assets/media/venmo_qrcode.PNG" width="288px" height="288px" />
+          <a
+            href="#collapseVenmo"
+            class="btn btn-pay-deposit"
+            data-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseVenmo"
+          >
+            <b>Venmo</b>
+          </a>
+          <div class="collapse mt-3" id="collapseVenmo">
+            <p>
+              <a href="https://venmo.com/code?user_id=1632127569362944774"> @austensummers </a>
+            </p>
+            <img src="assets/media/venmo_qrcode2.png" width="288px" height="288px" />
+          </div>
         </div>
         <div class="col">
-          <p>
-            CashApp:
-            <a href="https://cash.app/$austenss"> $austenss </a>
-          </p>
-          <img src="https://cash.app/qr/$austenss?size=288&margin=0" />
+          <a
+            href="#collapseCashApp"
+            class="btn btn-pay-deposit"
+            data-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseCashApp"
+          >
+            <b>CashApp</b>
+          </a>
+          <div class="collapse mt-3" id="collapseCashApp">
+            <p>
+              <a href="https://cash.app/$austenss"> $austenss </a>
+            </p>
+            <img src="https://cash.app/qr/$austenss?size=288&margin=0" />
+          </div>
         </div>
       </div>
       <div class="row my-3 text-center"></div>
-      <h2 class="animated animatedFadeInUp fadeInUp delay-1">Pay with Credit Card</h2>
+      <h2 class="animated animatedFadeInUp fadeInUp delay-1 mt-5">Pay with Credit Card</h2>
       <div class="row my-4 text-center">
         <div class="col">
-          <p>
-            PayPal:
-            <a href="https://www.paypal.me/austens"> @austens </a>
-          </p>
+          <a
+            target="_blank"
+            href="https://www.paypal.me/austens"
+            class="btn btn-pay-deposit"
+            role="button"
+          >
+            <b> PayPal </b>
+          </a>
         </div>
       </div>
-      <h2 class="animated animatedFadeInUp fadeInUp delay-1">Crypto - 5% Discount</h2>
+      <h2 class="animated animatedFadeInUp fadeInUp delay-1 mt-5">Crypto - 5% Discount</h2>
       <div class="row my-3 text-center">
-        <div class="col">
-          <p>Bitcoin: 1N3TS9TRTd1Hi8CwHytxbUi8XF5EiojK7B</p>
-          <img src="assets/media/bitcoin_qrcode.png" width="288px" height="288px" />
+        <div class="col-md-6 my-2">
+          <a
+            href="#collapseBitcoin"
+            class="btn btn-pay-deposit"
+            data-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseBitcoin"
+          >
+            <b>Bitcoin</b>
+          </a>
+          <div class="collapse mt-3" id="collapseBitcoin">
+            <p>1N3TS9TRTd1Hi8CwHytxbUi8XF5EiojK7B</p>
+            <img src="assets/media/bitcoin_qrcode.png" width="288px" height="288px" />
+          </div>
         </div>
-        <div class="col">
-          <p>Bitcoin Cash: qplwexe5hxywmpagj9uykdlajqcehku2kcmz9hyl3z</p>
-          <img src="assets/media/bitcoincash_qrcode.png" width="288px" height="288px" />
+        <div class="col-md-6 my-2">
+          <a
+            href="#collapseBitcoinCash"
+            class="btn btn-pay-deposit"
+            data-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseBitcoinCash"
+          >
+            <b>Bitcoin Cash</b>
+          </a>
+          <div class="collapse mt-3" id="collapseBitcoinCash">
+            <p>qplwexe5hxywmpagj9uykdlajqcehku2kcmz9hyl3z</p>
+            <img src="assets/media/bitcoincash_qrcode.png" width="288px" height="288px" />
+          </div>
         </div>
-        <div class="col">
-          <p>Ethereum: 0xB6F77496Ab82D7cf8fFC4780FaA0E6FfD38d1240</p>
-          <img src="assets/media/bitcoincash_qrcode.png" width="288px" height="288px" />
+        <div class="col-md-6 my-2">
+          <a
+            href="#collapseEthereum"
+            class="btn btn-pay-deposit"
+            data-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseEthereum"
+          >
+            <b>Ethereum</b>
+          </a>
+          <div class="collapse mt-3" id="collapseEthereum">
+            <p>0xB6F77496Ab82D7cf8fFC4780FaA0E6FfD38d1240</p>
+            <img src="assets/media/bitcoincash_qrcode.png" width="288px" height="288px" />
+          </div>
         </div>
-        <div class="col">
-          <p>
-            Monero:
-            44TdvPXHYUqguMYUprSLZ7T6E5gzLUEGpERaKsppHbzBMrGVQWcPn2AG2vLwLF6ppYcFywrDxJkhnVX27aBpKtYZ8Cuz8tZ
-          </p>
-          <img src="assets/media/monero_qrcode.png" width="288px" height="288px" />
+        <div class="col-md-6 my-2">
+          <a
+            href="#collapseStellar"
+            class="btn btn-pay-deposit"
+            data-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseStellar"
+          >
+            <b>Stellar</b>
+          </a>
+          <div class="collapse mt-3" id="collapseStellar">
+            <p>GDTCZDCXKIPQM57ISQDYYBFG6V7VTY5MKOPYLUDCAR3EIXIX5MIRN7YH</p>
+            <img src="assets/media/stellar_qrcode.png" width="288px" height="288px" />
+          </div>
         </div>
-        <div class="col">
-          <p>Stellar: GDTCZDCXKIPQM57ISQDYYBFG6V7VTY5MKOPYLUDCAR3EIXIX5MIRN7YH</p>
-          <img src="assets/media/stellar_qrcode.png" width="288px" height="288px" />
+        <div class="col-md-6 my-2">
+          <a
+            href="#collapseMonero"
+            class="btn btn-pay-deposit"
+            data-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseMonero"
+          >
+            <b>Monero</b>
+          </a>
+          <div class="collapse mt-3" id="collapseMonero">
+            <p>
+              44TdvPXHYUqguMYUprSLZ7T6E5gzLUEGpERaKsppHbzBMrGVQWcPn2AG2vLwLF6ppYcFywrDxJkhnVX27aBpKtYZ8Cuz8tZ
+            </p>
+            <img src="assets/media/monero_qrcode.png" width="288px" height="288px" />
+          </div>
         </div>
-        <div class="col">
-          <p>Chainlink: 0xB6F77496Ab82D7cf8fFC4780FaA0E6FfD38d1240</p>
-          <img src="assets/media/chainlink_qrcode.png" width="288px" height="288px" />
+        <div class="col-md-6 my-2">
+          <a
+            href="#collapseChainlink"
+            class="btn btn-pay-deposit"
+            data-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseChainlink"
+          >
+            <b>Chainlink</b>
+          </a>
+          <div class="collapse mt-3" id="collapseChainlink">
+            <p>0xB6F77496Ab82D7cf8fFC4780FaA0E6FfD38d1240</p>
+            <img src="assets/media/chainlink_qrcode.png" width="288px" height="288px" />
+          </div>
         </div>
       </div>
       <div class="row my-3 pt-5 text-center"></div>

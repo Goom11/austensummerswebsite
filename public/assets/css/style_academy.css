@@ -132,6 +132,10 @@ body {
   flex-grow: 1;
 }
 
+#paymentoptions {
+  word-wrap: break-word;
+}
+
 .btn-pay-deposit {
   color: #0f0f0f;
   background-color: #ffcc66;
