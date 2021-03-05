@@ -129,7 +129,9 @@
 
     <!-- SECTION2 -->
     <div class="container section2 mb-0 p-4 pt-5" id="paymentoptions">
-      <h1 class="animated animatedFadeInUp fadeInUp delay-1 text-center">Payment Services</h1>
+      <h1 class="animated animatedFadeInUp fadeInUp delay-1 text-center">
+        <b>Payment Services</b>
+      </h1>
       <div class="row my-3 text-center">
         <div class="col">
           <a
@@ -143,10 +145,10 @@
             <b>Venmo</b>
           </a>
           <div class="collapse mt-3" id="collapseVenmo">
-            <p>
-              <a href="https://venmo.com/code?user_id=1632127569362944774"> @austensummers </a>
-            </p>
-            <img src="assets/media/venmo_qrcode2.png" width="288px" height="288px" />
+            <a href="https://venmo.com/code?user_id=1632127569362944774">
+              <h4>@austensummers</h4>
+              <img src="assets/media/venmo_qrcode2.png" width="288px" height="288px" />
+            </a>
           </div>
         </div>
         <div class="col">
@@ -161,16 +163,16 @@
             <b>CashApp</b>
           </a>
           <div class="collapse mt-3" id="collapseCashApp">
-            <p>
-              <a href="https://cash.app/$austenss"> $austenss </a>
-            </p>
-            <img src="https://cash.app/qr/$austenss?size=288&margin=0" />
+            <a href="https://cash.app/$austenss">
+              <p>$austenss</p>
+              <img src="https://cash.app/qr/$austenss?size=288&margin=0" />
+            </a>
           </div>
         </div>
       </div>
       <div class="row my-3 text-center"></div>
       <h1 class="animated animatedFadeInUp fadeInUp delay-1 mt-5 text-center">
-        Pay with Credit Card
+        <b>Credit Card</b> - 3% Fee
       </h1>
       <div class="row my-4 text-center">
         <div class="col">
@@ -185,14 +187,21 @@
         </div>
       </div>
       <h1 class="animated animatedFadeInUp fadeInUp delay-1 mt-5 text-center">
-        Crypto - 5% Discount
+        <b>Crypto</b> - 5% Discount
       </h1>
-      <h2>Instructions</h2>
-      <h5>1. Send Crypto to one of the addresses below</h5>
-      <h5>
-        2. Send the screenshot or block explorer link for the transaction with a description of what
-        it's for to me on austensummers (at) protonmail (dot) com
-      </h5>
+      <div class="row my-3">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <h5 class="text-center">Instructions</h5>
+          <h6>1. Send Crypto to one of the addresses below</h6>
+          <h6>
+            2. Send the screenshot or block explorer link with a description to austensummers (at)
+            protonmail (dot) com
+          </h6>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+
       <div class="row my-3 text-center">
         <div class="col-md-6 my-2">
           <a
@@ -260,24 +269,6 @@
         </div>
         <div class="col-md-6 my-2">
           <a
-            href="#collapseMonero"
-            class="btn btn-pay-deposit"
-            data-toggle="collapse"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseMonero"
-          >
-            <b>Monero</b>
-          </a>
-          <div class="collapse mt-3" id="collapseMonero">
-            <p>
-              44TdvPXHYUqguMYUprSLZ7T6E5gzLUEGpERaKsppHbzBMrGVQWcPn2AG2vLwLF6ppYcFywrDxJkhnVX27aBpKtYZ8Cuz8tZ
-            </p>
-            <img src="assets/media/monero_qrcode.png" width="288px" height="288px" />
-          </div>
-        </div>
-        <div class="col-md-6 my-2">
-          <a
             href="#collapseChainlink"
             class="btn btn-pay-deposit"
             data-toggle="collapse"
@@ -324,12 +315,29 @@
             <img src="assets/media/xrp_qrcode.png" width="288px" height="288px" />
           </div>
         </div>
+        <div class="col-md-6 my-2">
+          <a
+            href="#collapseMonero"
+            class="btn btn-pay-deposit"
+            data-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseMonero"
+          >
+            <b>Monero</b>
+          </a>
+          <div class="collapse mt-3" id="collapseMonero">
+            <p>
+              44TdvPXHYUqguMYUprSLZ7T6E5gzLUEGpERaKsppHbzBMrGVQWcPn2AG2vLwLF6ppYcFywrDxJkhnVX27aBpKtYZ8Cuz8tZ
+            </p>
+            <img src="assets/media/monero_qrcode.png" width="288px" height="288px" />
+          </div>
+        </div>
       </div>
-      <div class="row my-3 pt-5 text-center"></div>
-      <h1 class="animated animatedFadeInUp fadeInUp delay-1">Cash - 2.5% Discount</h1>
-      <div class="row my-3 text-center">
+      <div class="row my-5 text-center">
         <div class="col">
-          <h3>Pay in person</h3>
+          <h1 class="animated animatedFadeInUp fadeInUp delay-1"><b>Cash</b> - 2.5% Discount</h1>
+          <h3>Pay in person after sending deposit</h3>
         </div>
       </div>
     </div>
