@@ -77,15 +77,6 @@
       crossorigin="anonymous"
       async
     ></script>
-	<script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
-    <script src="https://js.stripe.com/v3/"></script>
-    <link
-      rel="preload"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <script type="text/javascript" src="assets/js/process.js"></script>
 
     <!-- NAVBAR -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-black">
@@ -183,9 +174,8 @@
       <h1 class="animated animatedFadeInUp fadeInUp delay-1 mt-5 text-center">
         <b>Credit Card</b> - 3% Fee
       </h1>
-      <div class="row my-3 text-center">
-
-        <div class="col-md-6 my-2">
+      <div class="row my-4 text-center">
+        <div class="col">
           <a
             target="popup"
             href="https://www.paypal.me/austens"
@@ -196,24 +186,6 @@
             <b> PayPal </b>
           </a>
         </div>
-        <div class="col-md-6 my-2">
-          <a
-            href="#collapseStripe"
-            class="btn btn-pay-deposit"
-            data-toggle="collapse"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseStripe"
-          >
-            <b>Stripe</b>
-          </a>
-          <div class="collapse mt-3" id="collapseStripe">
-                <button class="btn btn-pay-deposit btn-sub my-2 mx-5" id="pay-bootcamp">Bootcamp Deposit</a>
-                <button class="btn btn-pay-deposit btn-sub my-2 mx-5" id="pay-academy">Academy Deposit</a>
-                <button class="btn btn-pay-deposit btn-sub my-2 mx-5" id="pay-immersion">Immersion Deposit</a>
-          </div>
-        </div>
-
       </div>
       <h1 class="animated animatedFadeInUp fadeInUp delay-1 mt-5 text-center">
         <b>Crypto</b> - 5% Discount
