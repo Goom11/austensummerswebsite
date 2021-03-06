@@ -153,6 +153,12 @@ body {
   color: #0f0f0f;
 }
 
+.btn-sub {
+    max-width: 300px;
+    font-size:120%;
+    font-weight:600;
+}
+
 /* SECTION 3*/
 .section3 {
   background: #f5f5f5;
