@@ -12,7 +12,7 @@ const saleDB = {
   bootcamp: {
     title: "Miami Bootcamp Deposit",
     image: "https://austensummers.com/assets/media/bootcamp8.png",
-    price: 51100,
+    price: 51500,
   },
   academy: {
     title: "Austen Summers Academy Deposit",
