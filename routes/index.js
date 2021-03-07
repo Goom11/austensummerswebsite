@@ -2,25 +2,29 @@ const express = require("express");
 const path = require("path");
 const router = express.Router();
 const colombiablocker = require("./colombiablocker");
-const stripe = require('stripe')('sk_test_51IS0pXH1H6WEySTm6YCRXNmPSK8kxKLpVDqaVwGgl2PP8NDlLsI270fym8cFqrZg2sMaE4DI6esWqi5tF4pYpdpx00lgQhKnl3');
+const fs = require("fs");
+const stripeSecretKey = fs
+  .readFileSync(path.join(__dirname + "/key.txt"), "utf8")
+  .split("\n")[0];
+const stripe = require("stripe")(stripeSecretKey);
 
 const saleDB = {
-  "bootcamp":{
-    title:"Miami Bootcamp Deposit",
-    image:"https://austensummers.com/assets/media/bootcamp8.png",
-    price:50000,
+  bootcamp: {
+    title: "Miami Bootcamp Deposit",
+    image: "https://austensummers.com/assets/media/bootcamp8.png",
+    price: 100,
   },
- "academy":{
-    title:"Austen Summers Academy Deposit",
-    image:"https://austensummers.com/assets/media/academy2.jpg",
-    price:50000,
+  academy: {
+    title: "Austen Summers Academy Deposit",
+    image: "https://austensummers.com/assets/media/academy2.jpg",
+    price: 51500,
   },
-  "immersion":{
-    title:"Miami Immersion Deposit",
-    image:"https://austensummers.com/assets/media/immersion_pane.jpeg",
-    price:100000,
-  }  
-}
+  immersion: {
+    title: "Miami Immersion Deposit",
+    image: "https://austensummers.com/assets/media/immersion_pane.jpeg",
+    price: 103000,
+  },
+};
 
 /*
 router.get("/.well-known/acme-challenge/Mi6cv3k8yXVZTmrWfJFVlTTupOiuWPKRroCeu1QJ1mk", function (req, res, next) {
@@ -84,20 +88,19 @@ router.get("/pay", function (req, res, next) {
 
 router.get("/success", function (req, res, next) {
   res.sendFile(path.join(__dirname + "/success.html"));
-})
+});
 
 router.get("/fail", function (req, res, next) {
   res.sendFile(path.join(__dirname + "/fail.html"));
-})
+});
 
-
-router.post('/bill/bootcamp', async (req, res) => {
-const session = await stripe.checkout.sessions.create({
-    payment_method_types: ['card'],
+router.post("/bill/bootcamp", async (req, res) => {
+  const session = await stripe.checkout.sessions.create({
+    payment_method_types: ["card"],
     line_items: [
       {
         price_data: {
-          currency: 'usd',
+          currency: "usd",
           product_data: {
             name: saleDB["bootcamp"].title,
             images: [saleDB["bootcamp"].image],
@@ -107,20 +110,20 @@ const session = await stripe.checkout.sessions.create({
         quantity: 1,
       },
     ],
-    mode: 'payment',
+    mode: "payment",
     success_url: `https://www.austensummers.com/success`,
     cancel_url: `https://www.austensummers.com/fail`,
   });
   res.json({ id: session.id });
 });
 
-router.post('/bill/academy', async (req, res) => {
-const session = await stripe.checkout.sessions.create({
-    payment_method_types: ['card'],
+router.post("/bill/academy", async (req, res) => {
+  const session = await stripe.checkout.sessions.create({
+    payment_method_types: ["card"],
     line_items: [
       {
         price_data: {
-          currency: 'usd',
+          currency: "usd",
           product_data: {
             name: saleDB["academy"].title,
             images: [saleDB["academy"].image],
@@ -130,20 +133,20 @@ const session = await stripe.checkout.sessions.create({
         quantity: 1,
       },
     ],
-    mode: 'payment',
+    mode: "payment",
     success_url: `https://www.austensummers.com/success`,
     cancel_url: `https://www.austensummers.com/fail`,
   });
   res.json({ id: session.id });
 });
 
-router.post('/bill/immersion', async (req, res) => {
-const session = await stripe.checkout.sessions.create({
-    payment_method_types: ['card'],
+router.post("/bill/immersion", async (req, res) => {
+  const session = await stripe.checkout.sessions.create({
+    payment_method_types: ["card"],
     line_items: [
       {
         price_data: {
-          currency: 'usd',
+          currency: "usd",
           product_data: {
             name: saleDB["immersion"].title,
             images: [saleDB["immersion"].image],
@@ -153,7 +156,7 @@ const session = await stripe.checkout.sessions.create({
         quantity: 1,
       },
     ],
-    mode: 'payment',
+    mode: "payment",
     success_url: `https://www.austensummers.com/success`,
     cancel_url: `https://www.austensummers.com/fail`,
   });
@@ -163,6 +166,5 @@ const session = await stripe.checkout.sessions.create({
 router.get("*", function (req, res) {
   res.redirect("/");
 });
-
 
 module.exports = router;

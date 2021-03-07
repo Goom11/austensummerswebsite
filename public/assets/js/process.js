@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var stripe = Stripe("pk_test_51IS0pXH1H6WEySTmSfFwNRckYGXJLt3e6rhyK6ymxdQsDJPSU1f8o98HsrYsx7i69xJyhs30Km7WNzhL54Nwr8lQ00pN2ZyK8I");
+    var stripe = Stripe("pk_live_pZQS2g6vMNadlR96KZKxWR3C");
       
       $("#pay-bootcamp").click(function() {
           $(this).text("Redirecting...").prop("disabled", true);
