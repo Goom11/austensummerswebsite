@@ -38,6 +38,12 @@ body {
   max-width: 250px;
   display: block;
   margin: 0 auto;
+  border-color:orange;
+  border-radius:5px;
+  min-width:50%;
+  min-height:3rem;
+  font-size:1.5rem;
+  background-color:#ffcc66;
 }
 
 .btn-pay-deposit {
