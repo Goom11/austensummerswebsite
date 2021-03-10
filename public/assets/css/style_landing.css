@@ -32,9 +32,11 @@ p {
 
 /*NAVBAR*/
 .bg-black {
+  background-image: -o-linear-gradient(75deg, #f5f5f5 0%, white 100%);
   background-image: linear-gradient(15deg, #f5f5f5 0%, white 100%);
   color: black;
-  box-shadow: 0 6px 6px -4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 6px 6px -4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 6px 6px -4px rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
 
@@ -53,10 +55,19 @@ p {
   background-position-y: -23vw;
 
   height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   font-family: "SuisseIntl";
 }
@@ -136,14 +147,20 @@ p {
   width: 250px;
   background-color: white;
   overflow: hidden;
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
   transition: all 0.1s;
-  box-shadow: 1px 5px 25px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 1px 5px 25px rgba(255, 255, 255, 1);
+          box-shadow: 1px 5px 25px rgba(255, 255, 255, 1);
 }
 
 .page:hover {
   cursor: pointer;
-  transform: scale(1.03);
-  box-shadow: 1px 5px 25px rgba(0, 100, 200, 0.5);
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: 1px 5px 25px rgba(0, 100, 200, 0.5);
+          box-shadow: 1px 5px 25px rgba(0, 100, 200, 0.5);
 }
 
 .page .pageimg {
@@ -157,11 +174,19 @@ p {
 
 .page .pagetext {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 1rem;
   background-color: #03071e;
   font-size: 1rem;
@@ -173,16 +198,26 @@ p {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .page .pageimg .pane-overlay h3 {
   height: 100%;
   width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   font-size: 1.5rem;
   font-family: SuisseIntl;
@@ -214,6 +249,24 @@ p {
 
 .silver {
   background-color: #e1e1e1;
+  background: -o-radial-gradient(
+      right bottom,
+      ellipse farthest-corner,
+      #d3d3d3 0%,
+      #bebebe 30%,
+      #7b7b7b 50%,
+      #7b7b7b 50%,
+      #bebebe 100%
+    ),
+    -o-radial-gradient(
+      left top,
+      ellipse farthest-corner,
+      #d3d3d3 20%,
+      #bebebe 30%,
+      #b4b4b4 55%,
+      #4b4b4b 72.5%,
+      #4b4b4b 100%
+    );
   background: radial-gradient(
       ellipse farthest-corner at right bottom,
       #d3d3d3 0%,
@@ -251,9 +304,14 @@ p {
   background-color: #03071e;
   border-radius: 10px;
 
+  -webkit-transition: all 0.1s ease;
+
+  -o-transition: all 0.1s ease;
+
   transition: all 0.1s ease;
   border: none;
-  box-shadow: 0 4px 12px 0 rgba(152, 160, 180, 10);
+  -webkit-box-shadow: 0 4px 12px 0 rgba(152, 160, 180, 10);
+          box-shadow: 0 4px 12px 0 rgba(152, 160, 180, 10);
   color: white;
   font-size: 1.2rem;
   padding: 0.6rem;
@@ -261,10 +319,14 @@ p {
 }
 
 .blackbtn:hover {
-  transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 .blackbtn:active {
-  transform: scale(0.98);
+  -webkit-transform: scale(0.98);
+      -ms-transform: scale(0.98);
+          transform: scale(0.98);
 }
 .blackbtn:focus {
   outline: none;
@@ -272,6 +334,10 @@ p {
 
 /*SECTION4*/
 .section4 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))),
+    url(https://www.austensummers.com/assets/img/the-academy-picture-compressed.jpg);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://www.austensummers.com/assets/img/the-academy-picture-compressed.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(https://www.austensummers.com/assets/img/the-academy-picture-compressed.jpg);
 
@@ -291,7 +357,7 @@ p {
   font-weight: 500;
 }
 
-/*	SECTION5	*/
+/*  SECTION5  */
 .section5 {
   position: relative;
 }
@@ -307,11 +373,15 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s;
 }
 
 .imgbox:hover {
-  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .img1 {
@@ -362,9 +432,15 @@ p {
   left: 0;
   width: 100vw;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .igref_container:hover {
   color: inherit;
@@ -376,15 +452,23 @@ p {
   height: 230px;
   background-color: #03071e;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   font-family: "SuisseIntl";
   font-weight: 100;
   -webkit-box-shadow: -1px 2px 74px -3px rgba(0, 0, 0, 1);
-  -moz-box-shadow: -1px 2px 74px -3px rgba(0, 0, 0, 1);
   box-shadow: -1px 2px 74px -3px rgba(0, 0, 0, 1);
 }
 
@@ -394,14 +478,20 @@ p {
 #igref > h2 {
   font-size: 1.7rem;
   font-weight: 700;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 #igref:hover {
-  transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 #igref:active {
-  transform: scale(0.98);
+  -webkit-transform: scale(0.98);
+      -ms-transform: scale(0.98);
+          transform: scale(0.98);
 }
 #igref:focus {
   outline: none;
@@ -424,8 +514,13 @@ footer {
   background-color: lightgray;
   color: gray;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   min-height: 250px;
   padding-left: 10vw;
   padding-right: 10vw;
@@ -433,33 +528,63 @@ footer {
 
 footer a {
   color: gray;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
   transition: all 0.4s;
 }
 footer a:hover {
   color: gray;
-  transform: translateX(10px);
+  -webkit-transform: translateX(10px);
+      -ms-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 footer .footer-logo {
-  flex-basis: 20%;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 footer .footer-nav {
-  flex-basis: 20%;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 footer .footer-helpful {
-  flex-basis: 20%;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 footer .footer-icons {
-  flex-basis: 20%;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*RESPONSIVENESS*/
@@ -545,11 +670,16 @@ footer .footer-icons {
     margin-top: 30px;
   }
   footer {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 3rem 0 1rem 5rem;
   }
   footer .footer-icons {
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 
   .iconlist > b {
