@@ -57,7 +57,7 @@ router.get("/immersion", colombiablocker, function (req, res, next) {
 });
 
 /* GET clientresults page. */
-router.get("/clientresults", function (req, res, next) {
+router.get("/results", function (req, res, next) {
   res.sendFile(path.join(__dirname + "/clientresults.html"));
 });
 
