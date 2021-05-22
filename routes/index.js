@@ -26,15 +26,13 @@ const saleDB = {
   },
 };
 
-/*
-router.get("/.well-known/acme-challenge/Mi6cv3k8yXVZTmrWfJFVlTTupOiuWPKRroCeu1QJ1mk", function (req, res, next) {
-  res.send("Mi6cv3k8yXVZTmrWfJFVlTTupOiuWPKRroCeu1QJ1mk.3Luu3iycHojEMnXuYlPpDZlywOShzGIvtre3S1yQHfo");
+router.get("/.well-known/acme-challenge/m4hHiYRv9fpoMZBoW3opJV--OTGCFQliuWtkjbB1zf0", function (req, res, next) {
+  res.send("m4hHiYRv9fpoMZBoW3opJV--OTGCFQliuWtkjbB1zf0.3Luu3iycHojEMnXuYlPpDZlywOShzGIvtre3S1yQHfo");
 });
 
-router.get("/.well-known/acme-challenge/ab7mULAPx9Uj5vmEavpCaDxD7C5AbwzHRpsfekYqZh4", function (req, res, next) {
-  res.send("ab7mULAPx9Uj5vmEavpCaDxD7C5AbwzHRpsfekYqZh4.3Luu3iycHojEMnXuYlPpDZlywOShzGIvtre3S1yQHfo");
+router.get("/.well-known/acme-challenge/xYYVfDOFIKMSmrdhi1zxN0Ig6iRPZ8r1Miy3qKc6njs", function (req, res, next) {
+  res.send("xYYVfDOFIKMSmrdhi1zxN0Ig6iRPZ8r1Miy3qKc6njs.3Luu3iycHojEMnXuYlPpDZlywOShzGIvtre3S1yQHfo");
 });
-*/
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
