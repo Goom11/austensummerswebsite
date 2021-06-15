@@ -26,13 +26,23 @@ const saleDB = {
   },
 };
 
-router.get("/.well-known/acme-challenge/m4hHiYRv9fpoMZBoW3opJV--OTGCFQliuWtkjbB1zf0", function (req, res, next) {
-  res.send("m4hHiYRv9fpoMZBoW3opJV--OTGCFQliuWtkjbB1zf0.3Luu3iycHojEMnXuYlPpDZlywOShzGIvtre3S1yQHfo");
-});
+router.get(
+  "/.well-known/acme-challenge/m4hHiYRv9fpoMZBoW3opJV--OTGCFQliuWtkjbB1zf0",
+  function (req, res, next) {
+    res.send(
+      "m4hHiYRv9fpoMZBoW3opJV--OTGCFQliuWtkjbB1zf0.3Luu3iycHojEMnXuYlPpDZlywOShzGIvtre3S1yQHfo"
+    );
+  }
+);
 
-router.get("/.well-known/acme-challenge/xYYVfDOFIKMSmrdhi1zxN0Ig6iRPZ8r1Miy3qKc6njs", function (req, res, next) {
-  res.send("xYYVfDOFIKMSmrdhi1zxN0Ig6iRPZ8r1Miy3qKc6njs.3Luu3iycHojEMnXuYlPpDZlywOShzGIvtre3S1yQHfo");
-});
+router.get(
+  "/.well-known/acme-challenge/xYYVfDOFIKMSmrdhi1zxN0Ig6iRPZ8r1Miy3qKc6njs",
+  function (req, res, next) {
+    res.send(
+      "xYYVfDOFIKMSmrdhi1zxN0Ig6iRPZ8r1Miy3qKc6njs.3Luu3iycHojEMnXuYlPpDZlywOShzGIvtre3S1yQHfo"
+    );
+  }
+);
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
@@ -45,8 +55,8 @@ router.get("/academy", function (req, res, next) {
 });
 
 /* GET bootcamp page. */
-router.get("/bootcamp", function (req, res, next) {
-  res.sendFile(path.join(__dirname + "/bootcamp.html"));
+router.get("/bootcamp", function (req, res) {
+  res.redirect("/immersion");
 });
 
 /* GET immersion page. Colombia Blocker Middleware */
