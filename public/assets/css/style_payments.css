@@ -173,6 +173,19 @@ body {
   color: #0f0f0f;
 }
 
+.btn-pay-deposit-btc {
+  color: #0f0f0f;
+  background-color: #ced4da;
+  border-color: #ffcc66;
+  font-size: 200%;
+  width: 100%;
+  max-width: 300px;
+}
+
+.btn-pay-deposit-btc:hover {
+  color: #0f0f0f;
+}
+
 .btn-sub {
     max-width: 300px;
     font-size:120%;
