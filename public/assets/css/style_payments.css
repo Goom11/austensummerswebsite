@@ -186,6 +186,19 @@ body {
   color: #0f0f0f;
 }
 
+.btn-how-to-buy {
+  color: #0f0f0f;
+  background-color: #ced4da;
+  border-color: #ffcc66;
+  font-size: 200%;
+  width: 100%;
+  max-width: 300px;
+}
+
+.btn-how-to-buy:hover {
+  color: #0f0f0f;
+}
+
 .btn-sub {
     max-width: 300px;
     font-size:120%;
