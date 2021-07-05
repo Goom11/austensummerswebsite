@@ -188,14 +188,35 @@
       <div class="row my-3 text-center">
         <div class="col-md-6 my-2">
           <a
-            target="popup"
-            href="https://www.paypal.me/austens"
-            onclick="window.open('https://www.paypal.me/austens','popup','toolbar=no,menubar=no,location=yes,resizable=yes,status=no,scrollbars=yes,top=125,left=470,width=500,height=650'); return false;"
+            href="#collapsePayPal"
             class="btn btn-pay-deposit"
+            data-toggle="collapse"
             role="button"
+            aria-expanded="false"
+            aria-controls="collapsePayPal"
           >
-            <b> PayPal </b>
+            <b>PayPal</b>
           </a>
+          <div class="collapse mt-3" id="collapsePayPal">
+            <a
+              target="popup"
+              href="https://www.paypal.me/austens/515"
+              onclick="window.open('https://www.paypal.me/austens/515','popup','toolbar=no,menubar=no,location=yes,resizable=yes,status=no,scrollbars=yes,top=125,left=470,width=500,height=650'); return false;"
+              class="btn btn-pay-deposit btn-sub my-2 mx-5"
+              role="button"
+            >
+              Academy Deposit
+            </a>
+            <a
+              target="popup"
+              href="https://www.paypal.me/austens/1030"
+              onclick="window.open('https://www.paypal.me/austens/1030','popup','toolbar=no,menubar=no,location=yes,resizable=yes,status=no,scrollbars=yes,top=125,left=470,width=500,height=650'); return false;"
+              class="btn btn-pay-deposit btn-sub my-2 mx-5"
+              role="button"
+            >
+              Immersion Deposit
+            </a>
+          </div>
         </div>
         <div class="col-md-6 my-2">
           <a
